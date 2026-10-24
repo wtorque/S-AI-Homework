@@ -1,0 +1,25 @@
+Question: Create a Project Folder Structure
+
+Link:
+https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution:
+cat > create-service << 'EOF'
+#!/bin/bash
+
+mkdir -p service/controllers
+mkdir -p service/models
+mkdir -p service/routes
+mkdir -p service/middleware
+
+echo "API Service" > service/README.md
+echo 'console.log("Server started");' > service/server.js
+EOF
+
+chmod +x create-service
+./create-service
+
+Approach:
+1. Writing the correct code in the create-service script replacing the original wrong code
+2. Giving create-service execution permissions
+3. Executing create-service to create required structure
