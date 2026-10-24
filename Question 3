@@ -1,0 +1,21 @@
+Question: Data Breach Response
+
+Link:
+https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
+Solution:
+cd breach_response/
+chmod 777 evidence/ reports/incident_summary.txt
+cp evidence/log_dump.txt log_dump.txt
+mv evidence/ secure/
+echo "Breach confirmed" >> reports/incident_summary.txt
+echo "Forensics Complete" > secure/forensics_report.txt
+echo "Escalated to security team" >> reports/incident_summary.txt
+chmod 444 reports/incident_summary.txt
+chmod 555 secure/evidence/
+chmod 600 secure/forensics_report.txt
+
+Approach:
+1. changing the permission according to the required permissions 
+2. update the files as per the question
+3. restore as default
