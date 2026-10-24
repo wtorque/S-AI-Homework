@@ -1,0 +1,7 @@
+Advanced File Management
+
+https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+mkdir Project-files
+cd Project-files
+touch report.docx summary.docx report.docx
